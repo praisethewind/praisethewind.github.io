@@ -62,7 +62,7 @@ body {
 .avatar_photo {
       display: block;
       margin: 20px;
-      height: 200px;
+
       border: 4px double darkgrey;
       margin-left: auto;
       margin-right: auto;
@@ -146,10 +146,10 @@ body {
       #content { height: 1200px; }
       #left_content_div { width: 100%; }
       #right_content_div { width: 100%; }
-      .content_section { font-size: 14px; }
-      .section_title { font-size: 20px; }
+      .content_section { font-size: 20px; }
+      .section_title { font-size: 25px; }
       .header_title_name { font-size: 40px; }
-      .header_title_position { font-size: 20px; }
+      .header_title_position { font-size: 18px; }
       #header{ padding: 0; }
 }
 
@@ -161,8 +161,13 @@ body {
    html {
       -webkit-text-size-adjust: none;
    }
-   div {
-      font-size: 70%;
-   }
+   .header_title { margin-left: 10px; }
+   #avatar { margin-left: 0; margin-right: 0; }
+   #avatar img { width: 75%; height: 75%; }
+   #content { height: 2000px; }
+   body { margin: 0; }
+   .content_section { margin-left: 0; margin-right: 0; }
+   .content_section h4 { text-align: center; }
+   .section_contacts { margin-left: 10px; }
 }
 

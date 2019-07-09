@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
         <meta http-equiv="Content-Type" content="text/html"; charset=utf-8>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>    
         <div class="main_section">
-            <div class="w">
+            <div class="header">
+                <h1>Memory game</h1>
+                <p>Нажимая на карточки, найди одинковые пары картинок.</p>
+            </div>
+            <div class="cards">
                 <div class="gameButton">
                     <img id="cell_0" onclick="button(0)" src="images/default.jpg">
                 </div>
@@ -22,9 +26,7 @@
                 </div>
                 <div class="gameButton">
                     <img id="cell_4" onclick="button(4)" src="images/default.jpg">
-                </div>
-            </div>
-            <div class="w">
+                </div>      
                 <div class="gameButton">
                     <img id="cell_5" onclick="button(5)" src="images/default.jpg">
                 </div>
@@ -40,8 +42,6 @@
                 <div class="gameButton">
                     <img id="cell_9" onclick="button(9)" src="images/default.jpg">
                 </div>
-            </div>
-            <div class="w">
                 <div class="gameButton">
                     <img id="cell_10" onclick="button(10)" src="images/default.jpg">
                 </div>
@@ -57,8 +57,6 @@
                 <div class="gameButton">
                     <img id="cell_14" onclick="button(14)" src="images/default.jpg">
                 </div>
-            </div>
-            <div class="w">
                 <div class="gameButton">
                     <img id="cell_15" onclick="button(15)" src="images/default.jpg">
                 </div>
@@ -74,9 +72,38 @@
                 <div class="gameButton">
                     <img id="cell_19" onclick="button(19)" src="images/default.jpg">
                 </div>
+                <div class="gameButton">
+                    <img id="cell_20" onclick="button(20)" src="images/default.jpg">
+                </div>
+                <div class="gameButton">
+                    <img id="cell_21" onclick="button(21)" src="images/default.jpg">
+                </div>
+                <div class="gameButton">
+                    <img id="cell_22" onclick="button(22)" src="images/default.jpg">
+                </div>
+                <div class="gameButton">
+                    <img id="cell_23" onclick="button(23)" src="images/default.jpg">
+                </div>
+                <div class="gameButton">
+                    <img id="cell_24" onclick="button(24)" src="images/default.jpg">
+                </div>
+                <div class="gameButton">
+                    <img id="cell_25" onclick="button(25)" src="images/default.jpg">
+                </div>
+                <div class="gameButton">
+                    <img id="cell_26" onclick="button(26)" src="images/default.jpg">
+                </div>
+                <div class="gameButton">
+                    <img id="cell_27" onclick="button(27)" src="images/default.jpg">
+                </div>
             </div>
-            <div>
-                <input type="button" value="HELP" onclick="helpButton()">
+            <div class="text_section">
+                <div id="stopwatch"><time>00:00</time></div>
+                <div id="helpbutton"></div>
+                <br>
+                <div id="restartbutton">
+                    <input type="button" value="RESTART" onclick="restart()">
+                </div>
             </div>
         </div>
     </body>

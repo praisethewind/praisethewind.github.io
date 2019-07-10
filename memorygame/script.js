@@ -49,7 +49,7 @@ function restart() {
     }
 
     document.getElementById('helpbutton').innerHTML = '<input type="button" value="Подсказка(+30sec)" onclick="helpButton()">';
-    // timer restart
+    // Timer restart
     clearTimeout(t);
     timer();
 }

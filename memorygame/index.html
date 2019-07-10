@@ -11,7 +11,7 @@
                 <h1>Memory game</h1>
                 <p>Нажимая на карточки, найди одинковые пары картинок.</p>
             </div>
-            <div class="cards">
+            <div id="cardsList">
                 <div class="gameButton">
                     <img id="cell_0" onclick="button(0)" src="images/default.jpg">
                 </div>
@@ -84,25 +84,19 @@
                 <div class="gameButton">
                     <img id="cell_23" onclick="button(23)" src="images/default.jpg">
                 </div>
-                <div class="gameButton">
-                    <img id="cell_24" onclick="button(24)" src="images/default.jpg">
-                </div>
-                <div class="gameButton">
-                    <img id="cell_25" onclick="button(25)" src="images/default.jpg">
-                </div>
-                <div class="gameButton">
-                    <img id="cell_26" onclick="button(26)" src="images/default.jpg">
-                </div>
-                <div class="gameButton">
-                    <img id="cell_27" onclick="button(27)" src="images/default.jpg">
-                </div>
             </div>
             <div class="text_section">
                 <div id="stopwatch"><time>00:00</time></div>
                 <div id="helpbutton"></div>
                 <br>
-                <div id="restartbutton">
+                <div>
                     <input type="button" value="RESTART" onclick="restart()">
+                </div>
+                <div>
+                    <p>Сложность:</p>
+                    <input class="difficultyButton" type="button" value="Easy" onclick="changeCells(5)">
+                    <input class="difficultyButton" type="button" value="Normal" onclick="changeCells(6)">
+                    <input class="difficultyButton" type="button" value="Hard" onclick="changeCells(7)">
                 </div>
             </div>
         </div>

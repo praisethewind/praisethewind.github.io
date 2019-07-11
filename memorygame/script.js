@@ -136,7 +136,7 @@ function endGameCheck() {
         timerInAction = false;
     }, 300);
 
-    document.getElementById('helpbutton').innerHTML = 'Level complete<br>Want restart?';
+    document.getElementById('helpbutton').innerHTML = 'Level complete<br>Want to restart?';
 }
 
 // Change difficulty level (number of columns - 5,6,7)
